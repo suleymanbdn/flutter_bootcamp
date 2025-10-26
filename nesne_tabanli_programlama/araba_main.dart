@@ -4,10 +4,7 @@ void main(){
   //nesne oluşturma
   var bmw = Araba(renk: "mavi", hiz: 100, calisiyormu: true);
 
-  print("-------------------------");
-  print("renk: ${bmw.renk}");
-  print("hız: ${bmw.hiz}");
-  print("çalışıyor mu: ${bmw.calisiyormu}");
+  bmw.bilgiAl();
 
 
 
@@ -16,23 +13,30 @@ void main(){
   bmw.hiz = 0;
   bmw.calisiyormu = false;
 
-  print("-------------------------");
-  print("renk: ${bmw.renk}");
-  print("hiz: ${bmw.hiz}");
-  print("çalışıyor mu : ${bmw.calisiyormu}");
+  bmw.bilgiAl();
+  bmw.calistir();
+  bmw.bilgiAl();
+  bmw.durdur();
+  bmw.bilgiAl();
+  bmw.hizlan(100);
+  bmw.bilgiAl();
+  bmw.yavasla(50);
+  bmw.bilgiAl();
 
   var sahin = Araba(renk: "beyaz", hiz: 0, calisiyormu: false);
-  print("--------------------");
-  print("renk: ${sahin.renk}");
-  print("hız : ${sahin.hiz}");
-  print("çalışıyor mu: ${sahin.calisiyormu}");
+  sahin.bilgiAl();
 
   sahin.renk = "sarı";
   sahin.hiz = 150;
   sahin.calisiyormu = true;
 
-  print("----------------------");
-  print("renk: ${sahin.renk}");
-  print("hız: ${sahin.hiz}");
-  print("çalışıyor mu: ${sahin.calisiyormu}");
+  sahin.bilgiAl();
+  sahin.durdur();
+  sahin.bilgiAl();
+  sahin.calistir();
+  sahin.bilgiAl();
+  sahin.hizlan(100);
+  sahin.bilgiAl();
+  sahin.yavasla(50);
+  sahin.bilgiAl();
 }
